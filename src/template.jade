@@ -1,0 +1,37 @@
+head
+  meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
+  meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no")
+  block title
+    title portfolio | maurop123
+
+  link(rel="stylesheet" href="../bower_components/materialize/dist/css/materialize.min.css")
+  link(rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css")
+  link(rel="stylesheet" href="styles.css")
+
+body
+  include ./navbar.jade
+  block content
+  
+  footer.page-footer
+    .container
+      .row(style="margin-bottom:0")
+        nav
+         .col.nav-wrapper
+          ul
+            li
+              a.white-text(href="http://twitter.com/mptysquare")
+                i.fa.fa-twitter.fa-2x
+                span @MptySquare
+            li
+              a.white-text(href="http://github.com/maurop123")
+                i.fa.fa-github.fa-2x
+                span github.com/maurop123
+
+script(src="../bower_components/jquery/dist/jquery.min.js")
+script(src="../bower_components/materialize/dist/js/materialize.min.js")
+script(src="../bower_components/masonry/dist/masonry.pkgd.min.js")
+script.
+  $('.button-collapse').sideNav()
+  $('.parallax').parallax()
+  $('.modal-trigger').leanModal()
+  $('.slider').slider()

@@ -1,0 +1,52 @@
+{
+  "index": {
+    "portfolio": [{
+      "title": "Jupit - Travel Planner",
+      "description": "Virtual travel assistant easily connecting travellers to Airbnb lodging, Eventbrite local events, and Google Flight fares in one easy search. Made with Meteor.js.",
+      "image": {
+        "src": "jupit.png",
+        "link": "http://jupit.co/"
+      }
+    },
+    {
+      "title": "Miami Budget",
+      "description": "D3 visualization of Miami Dade County's 2016 budget proposal from Miami's open data portal. Made in collaboration with Code for Miami.",
+      "image": {
+        "src": "sunburst.png",
+        "link": "http://bl.ocks.org/maurop123/dc1e77c66d1726565aa342ea0e3c3c4f"
+      }
+    },
+    {
+      "title": "Best Damn Me Tracker",
+      "description": "Mobile web app that lets you track anything and learn from the patterns of your behavior. Uses Angular 2, ngrx, RxJS, and Firebase.",
+      "image": {
+        "src": "tracker.png",
+        "link": "http://tracker.bestdamnme.com/"
+      }
+    }],
+    "companies": [{
+      "title": "Biznobo",
+      "description": "As this startup's first hire, we used RxJS, microservices, Firebase, and a React-like frontend to help business owners track user's across platforms and automate personalize marketing, leveraing 3rd party APIs like Mailchimp and KeenIO.",
+      "image": {
+        "src": "biznobo.png",
+        "link": "https://www.biznobo.com/home"
+      }
+    },
+    {
+      "title": "PeopleTicker",
+      "description": "This job rate search engine crunched compensation rates based on the job description, the candidate's experience, and the location of the company. I developed a real-time data pipeline of job postings using Python and Apache Solr, and the job rate engine using Java.",
+      "image": {
+        "src": "peopleticker.png",
+        "link": "http://peopleticker.com/"
+      }
+    },
+    {
+      "title": "Walt Disney Parks",
+      "description": "As a junior dev on the team that launched Disney's brand-new web experience, my team integrated all other services and I participated in making developer tools such as service heartbeat monitors, easy environment config switching, and data manipulating Python scripts.",
+      "image": {
+        "src": "disney.png",
+        "link": "https://disneyworld.disney.go.com/"
+      }
+    }]
+  }
+}

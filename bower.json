@@ -1,0 +1,30 @@
+{
+  "name": "maurop123.github.io",
+  "description": "maurop123 portfolio",
+  "main": "dist/index.html",
+  "authors": [
+    "maurop123"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "maurop123",
+    "portfolio",
+    "javascript",
+    "miami",
+    "node"
+  ],
+  "homepage": "https://maurop123.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.97.7",
+    "masonry": "^4.1.1",
+    "jquery": "2.2.4",
+    "font-awesome": "^4.6.3"
+  }
+}

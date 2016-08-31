@@ -1,0 +1,66 @@
+extends ./template.jade
+
+//- block title
+  title things i made | maurop123
+
+block content
+  // Top Section
+  #first-section.parallax-container.valign-wrapper
+
+    .row.center.valign
+      // h3.header.col.s12.light.white-text Where does technology fit in your buisness?
+
+    .parallax
+      img.responsive-img(src="img/background3.jpg" alt="background1")
+
+  // Portfolio
+  .section
+    .container
+
+      .section
+        p.flow-text.center.
+          I make things with code. I use Javascript a lot. See for yourself...
+      br
+      br
+
+      #masonry-grid.row
+        each item in index.portfolio
+          .col.s12.m6.l4
+            .card
+              .card-image.valign-wrapper
+                a.modal-trigger.waves-effect.valign.waves-light(href="#{item.image.link}" target="new")
+                  img(src="img/#{item.image.src}")
+              .card-content.center
+                span.card-title #{item.title}
+                p.description #{item.description}
+                //- Can't do this ---v  (http://jade-lang.com/reference/filters/)
+                  :marked
+                    #{item.description}
+
+  // Companies
+  #second-section.parallax-container.valign-wrapper
+    .row.center.valign
+      // h3.header.col.s12.light.white-text Where does technology fit in your buisness?
+    .parallax
+      img.responsive-img(src="img/background2.jpg" alt="background2")
+
+
+  .section
+    .container
+
+      .section
+        p.flow-text.center.
+          I've worked for some interesting people. Check them out...
+      br
+      br
+
+      #masonry-grid.row
+        each item in index.companies
+          .col.s12.m6.l4
+            .card
+              .card-image.valign-wrapper
+                a.modal-trigger.waves-effect.valign.waves-light(href="#{item.image.link}" target="new")
+                  img(src="img/#{item.image.src}")
+              .card-content.center
+                span.card-title #{item.title}
+                p.description #{item.description}

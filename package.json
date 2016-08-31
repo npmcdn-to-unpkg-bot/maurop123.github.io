@@ -1,0 +1,44 @@
+{
+  "name": "maurop123.github.io",
+  "version": "1.0.0",
+  "description": "maurop123 portfolio",
+  "main": "dist/index.html",
+  "scripts": {
+    "_build": "npm run build:coffee && npm run build:coffee-local && npm run build:sass && npm run build:jade && npm run build:images",
+    "build:coffee": "coffee -cbo dist src/*.coffee",
+    "build:coffee-local": "coffee -cb src/*.coffee",
+    "prebuild": "rm -rf dist",
+    "build": "npm run build:sass && npm run build:jade && npm run build:images",
+    "build:sass": "node-sass src/styles.sass -o dist",
+    "build:images": "copyfiles -u 1 src/img/* dist",
+    "build:jade": "jade -O src/data.json src/*.jade --out dist",
+    "prestart": "npm run build",
+    "start": "echo \"Built. file:///home/mauro/code/maurop123.github.io/dist/index.html\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "watch 'npm start' ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maurop123/maurop123.github.io.git"
+  },
+  "keywords": [
+    "maurop123",
+    "portfolio",
+    "javascript",
+    "miami",
+    "node"
+  ],
+  "author": "maurop123",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maurop123/maurop123.github.io/issues"
+  },
+  "homepage": "https://github.com/maurop123/maurop123.github.io#readme",
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "copyfiles": "^1.0.0",
+    "jade": "^1.11.0",
+    "jstransformer-marked": "^1.0.1",
+    "node-sass": "^3.8.0"
+  }
+}
